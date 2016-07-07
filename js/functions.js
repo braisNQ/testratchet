@@ -42,6 +42,8 @@ function resetCount(){
     showCount();
 }
 
-$(document).focus(function() {
-    showCount();
-});
+//hotfix show count afeter close modals
+function onCloseModal(modal) {
+  jQuery('#' + modal).removeClass('active');
+  showCount();
+};
