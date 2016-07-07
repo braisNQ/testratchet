@@ -45,5 +45,5 @@ function resetCount(){
 //hotfix show count afeter close modals
 function onCloseModal(modal) {
   jQuery('#' + modal).removeClass('active');
-  setTimeout(showCount, 2000);
+  setTimeout(showCount, 100);
 };
