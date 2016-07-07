@@ -21,10 +21,11 @@
     <!-- custom css and js -->
     <link href="css/style.css" rel="stylesheet">
     <script src="js/cookies.js"></script>
+    <script src="js/functions.js"></script>
 
 </head>
 
-<body>
+<body onload="showCount()">
     <!-- Make sure all your bars are the first things in your <body> -->
     <header class="bar bar-nav">
         <h1 class="title">Test Ratchet</h1>
@@ -55,11 +56,24 @@
             Wellcome to this test.
         </p>
         <div class="card">
-            1
+            <div class="divcount">
+                <span></span>
+                <p id="p_count"></p>
+            </div>
             <div class="content-padded">
-                <button class="btn btn-positive btn-block">
-                    <span class="icon icon-plus"></span>
-                </button>
+                <a href="#" class="btn btn-positive btn-block" onclick="incrementCount(1)">
+                    <span class="icon icon-up"></span>
+                </a>
+
+                <a href="#" class="btn btn-negative btn-block" onclick="decrementCount(1)">
+                    <span class="icon icon-down"></span>
+                </a>
+
+                 <a href="#" class="btn btn-primary btn-block" onclick="resetCount()">
+                    <span class="icon icon-close"></span>
+                </a>
+
+
             </div>
         </div>
     </div>
