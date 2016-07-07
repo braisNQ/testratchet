@@ -5,6 +5,8 @@ function showCount(){
         count = 0;
 
     document.getElementById("p_count").innerHTML = count;
+
+
 }
 
 function incrementCount(increment){
@@ -39,3 +41,7 @@ function resetCount(){
     setCookie("count", 0, 999);
     showCount();
 }
+
+$(document).focus(function() {
+    showCount();
+});

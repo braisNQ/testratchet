@@ -12,6 +12,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
+<script src="assets/jquery/1.11.3/jquery.min.js"></script>
+
     <!-- Include the compiled Ratchet CSS -->
     <link href="assets/ratchet-2.0.2/css/ratchet.css" rel="stylesheet">
 
@@ -36,11 +38,11 @@
             <span class="icon icon-home"></span>
             <span class="tab-label">Home</span>
         </a>
-        <a class="tab-item" href="#infoModal" data-transition="slide-in">
+        <a class="tab-item" href="#infoModal">
             <span class="icon icon-more"></span>
             <span class="tab-label">Info</span>
         </a>
-        <a class="tab-item" href="#settingsModal" data-transition="fade">
+        <a class="tab-item" href="#settingsModal">
             <span class="icon icon-gear"></span>
             <span class="tab-label">Settings</span>
         </a>
@@ -153,6 +155,8 @@
         </div>
     </div>
     <!-- /.modal -->
+
+
 
     <!-- load count -->
     <script>showCount()</script>
